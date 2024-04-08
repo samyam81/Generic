@@ -1,7 +1,10 @@
 //Write a generic method to count the number of elements in a collection 
-//that have a specific property (for example, odd integers, prime numbers, palindromes).
+// that have a specific property (for example, odd integers, prime numbers, palindromes).
+
 #include <iostream>
 #include <cmath>
+
+using namespace std;
 
 template <typename T>
 class Count {
@@ -36,7 +39,7 @@ private:
         if (n <= 1) {
             return false;
         }
-        for (int i = 2; i <= std::sqrt(n); ++i) {
+        for (int i = 2; i <= sqrt(n); ++i) {
             if (n % i == 0) {
                 return false;
             }
@@ -49,7 +52,7 @@ int main() {
     int integers[] = {1, 23, 4, 56, 78, 4, 3};
     int size = sizeof(integers) / sizeof(integers[0]);
     Count<int> counter(integers, size);
-    std::cout << "The number of primes is: " << counter.CountPrime() << std::endl;
-    std::cout << "The number of even numbers is: " << counter.CountEven() << std::endl;
+    cout << "The number of primes is: " << counter.CountPrime() << endl;
+    cout << "The number of even numbers is: " << counter.CountEven() << endl;
     return 0;
 }
