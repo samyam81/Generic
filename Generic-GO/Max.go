@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	"sort"
 )
 
@@ -36,12 +36,12 @@ func (f Float64) LessThan(other interface{}) bool {
 	return f < other.(Float64)
 }
 
-func main() {
-	integers := []Int{1, 2, 3, 45, 65, 97}
-	maxInt := NewMax(integers)
-	fmt.Printf("The largest of type is: %v\n", maxInt.FindMax())
+// func main() {
+// 	integers := []Int{1, 2, 3, 45, 65, 97}
+// 	maxInt := NewMax(integers)
+// 	fmt.Printf("The largest of type is: %v\n", maxInt.FindMax())
 
-	doubles := []Float64{999.0, 9862.0, 667.2, 97.85}
-	maxDouble := NewMax(doubles)
-	fmt.Printf("The largest of type is: %v\n", maxDouble.FindMax())
-}
+// 	doubles := []Float64{999.0, 9862.0, 667.2, 97.85}
+// 	maxDouble := NewMax(doubles)
+// 	fmt.Printf("The largest of type is: %v\n", maxDouble.FindMax())
+// }

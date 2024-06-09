@@ -26,10 +26,10 @@ func NewAvGFloat(array []float64) AvG[float64] {
 	return AvG[float64]{}
 }
 
-func main() {
-	integers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
-	NewAvGInt(integers)
+// func main() {
+// 	integers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9}
+// 	NewAvGInt(integers)
 
-	doubles := []float64{2.2, 3.3, 4.4, 5.5, 6.6}
-	NewAvGFloat(doubles)
-}
+// 	doubles := []float64{2.2, 3.3, 4.4, 5.5, 6.6}
+// 	NewAvGFloat(doubles)
+// }
